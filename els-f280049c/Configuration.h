@@ -46,6 +46,9 @@
 // Example: 200hmm = 2mm
 #define LEADSCREW_HMM 150
 
+// UI normally defaults to to imperial; offer the option to startup in metric
+// #define UI_STARTUP_IN_METRIC false
+#define UI_STARTUP_IN_METRIC true
 
 
 
