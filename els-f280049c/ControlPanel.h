@@ -30,7 +30,17 @@
 #include "F28x_Project.h"
 #include "SPIBus.h"
 
+//  AAA
+// F   B
+// F   B
+// F   B
+//  GGG
+// E   C
+// E   C
+// E   C
+//  DDD .
 
+//                ABCDEFG.
 #define ZERO    0b1111110000000000 // 0
 #define ONE     0b0110000000000000 // 1
 #define TWO     0b1101101000000000 // 2
@@ -44,6 +54,7 @@
 #define POINT   0b0000000100000000 // .
 #define BLANK   0b0000000000000000
 
+//                 ABCDEFG.
 #define LETTER_A 0b1110111000000000
 #define LETTER_B 0b0011111000000000
 #define LETTER_C 0b1001110000000000
@@ -71,6 +82,11 @@
 #define LETTER_Y 0b0111011000000000
 #define LETTER_Z 0b1101001000000000
 
+//                       ABCDEFG.
+#define LETTER_M_LEFT  0b1100110000000000
+#define LETTER_M_RIGHT 0b1110010000000000
+
+//             ABCDEFG.
 #define DASH 0b0000001000000000
 
 #define LED_TPI 1
