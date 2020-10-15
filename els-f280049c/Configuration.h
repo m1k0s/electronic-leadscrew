@@ -67,7 +67,7 @@
 //================================================================================
 
 // Steps and microsteps
-#define STEPPER_MICROSTEPS 1
+#define STEPPER_MICROSTEPS 3
 #define STEPPER_RESOLUTION 1000
 
 // Step, direction and enable pins are normally active-high
