@@ -70,6 +70,11 @@
 #define STEPPER_MICROSTEPS 3
 #define STEPPER_RESOLUTION 1000
 
+// Separate step and microstep settings for feed rates.  Redefine these if your
+// lathe has a separate feed drive train with a different ratio.
+#define STEPPER_MICROSTEPS_FEED STEPPER_MICROSTEPS
+#define STEPPER_RESOLUTION_FEED STEPPER_RESOLUTION
+
 // Step, direction and enable pins are normally active-high
 // #define INVERT_STEP_PIN true
 // #define INVERT_DIRECTION_PIN true
@@ -129,6 +134,21 @@
 #define HARDWARE_VERSION 2
 
 
+
+
+//================================================================================
+//                                FEATURES
+//
+// Additional features that can be enabled for your configuration.
+//================================================================================
+
+// Ignore all key presses when the machine is running.  Normally, only the mode
+// and direction keys are ignored.
+//#define IGNORE_ALL_KEYS_WHEN_RUNNING
+
+
+
+
 //================================================================================
 //                               CPU / TIMING
 //
@@ -144,7 +164,7 @@
 #define UI_REFRESH_RATE_HZ 100
 
 // RPM recalculation rate, in Hz
-#define RPM_CALC_RATE_HZ 10
+#define RPM_CALC_RATE_HZ 2
 
 // Microprocessor system clock
 #define CPU_CLOCK_MHZ 100
